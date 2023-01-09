@@ -1,0 +1,18 @@
+/*
+ * components: page components and templates
+ */
+
+@import '01__settings';
+@import '02__tools';
+
+.wrapper {
+  width: 750px;
+  max-width: 100%;
+  margin: 10px auto 0;
+
+  img {
+    width: 750px;
+    max-width: 100%;
+    display: block;
+  }
+}

@@ -1,0 +1,13 @@
+/*
+ * generics: basic global styles
+ */
+@import '01__settings';
+@import '02__tools';
+
+html, body {
+  background: $page__bgColor;
+  color: $page__color;
+}
+body {
+  font-size: 100%;
+}

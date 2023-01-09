@@ -1,0 +1,1 @@
+console.log('js module 2 built');

@@ -227,7 +227,7 @@
             baseDir: 'build/'+ mandant,
             index: 'index.html'
         },
-        port: 8000,
+        port: 8080,
         open: false
     };
 
@@ -248,7 +248,7 @@
             index: 'index.html'
         },
         files: [cssConfig.build +'*.css', jsConfig.build +'*.js', dir.build +'*.html'],
-        port: 8000,
+        port: 8080,
         open: false
     };
 
