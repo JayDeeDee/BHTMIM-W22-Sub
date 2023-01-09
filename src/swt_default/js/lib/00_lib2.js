@@ -1,0 +1,1 @@
+console.log('js lib 2 built');
