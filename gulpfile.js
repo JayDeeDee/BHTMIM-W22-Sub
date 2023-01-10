@@ -16,6 +16,7 @@
         del = require('del'),
         gulp = require('gulp'),
         imagemin = require('gulp-imagemin'),
+        jest = require('gulp-jest').default,
         minify = require('gulp-minify'),
         newer = require('gulp-newer'),
         order = require("gulp-order"),
@@ -199,6 +200,18 @@
     exports.prodImg = prepareImagesForProd;
 
     /***********************************************************************************
+     * test task (jest) for prod only
+     ***********************************************************************************/
+    function jestTest() {
+       return gulp.src('*.test.js')
+           .pipe(jest({"automock": false}));
+    }
+
+    exports.prodUnitTest = jestTest;
+    exports.devUnitTest = jestTest;
+
+
+    /***********************************************************************************
      * watch task for dev only
      ***********************************************************************************/
     function watchForDev(cb) {
@@ -268,11 +281,12 @@
     /***********************************************************************************
      * PRODUCTION Tasks: tasks for production build
      ***********************************************************************************/
-    exports.PROD = gulp.series(cleanProdDir, prepareImagesForProd, copyAssetsForProd, buildJSForProd, buildStylesForProd);
+    exports.PROD = gulp.series(cleanProdDir, prepareImagesForProd, copyAssetsForProd, buildJSForProd, buildStylesForProd, jestTest);
 
     /***********************************************************************************
      * Default Task: series of  for initial development build
      ***********************************************************************************/
+    exports.INIT = gulp.series(cleanDevDir, cleanProdDir, prepareImagesForDev, copyAssetsForDev, buildJSForDev, buildStylesForDev);
     exports.default = gulp.series(cleanDevDir, prepareImagesForDev, copyAssetsForDev, buildJSForDev, buildStylesForDev);
 
 })();

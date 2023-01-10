@@ -3,7 +3,12 @@
   "version": "0.0.1",
   "description": "Assigment 'Build management' in the course 'Methods & tools of modern software development'",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "snowpack dev",
+    "snowpack:DEV": "snowpack dev",
+    "snowpack:PROD": "snowpack build",
+    "test": "jest",
+    "test:gulpbuild": "jest gulp.test.js",
+    "test:snowpackbuild": "jest snowpack.test.js"
   },
   "repository": {
     "type": "git",
@@ -21,15 +26,18 @@
   },
   "homepage": "https://github.com/JayDeeDee/BHTMIM-W22-Sub#readme",
   "devDependencies": {
+    "@snowpack/plugin-optimize": "^0.2.13",
+    "@snowpack/plugin-sass": "^1.4.0",
     "autoprefixer": "^9.5.0",
-    "browser-sync": "^2.27.11",
     "bootstrap": "^5.2.3",
+    "browser-sync": "^2.27.11",
     "cssnano": "^4.1.10",
     "del": "^4.0.0",
     "dotenv": "^16.0.3",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^5.0.3",
+    "gulp-jest": "^4.0.4",
     "gulp-minify": "^3.1.0",
     "gulp-newer": "^1.4.0",
     "gulp-order": "^1.2.0",
@@ -37,12 +45,17 @@
     "gulp-sass": "^4.0.2",
     "gulp-size": "^3.0.0",
     "gulp-sourcemaps": "^2.6.5",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "jest": "^24.9.0",
     "postcss-assets": "^5.0.0",
+    "prettier": "^2.8.2",
+    "snowpack": "^3.0.11",
+    "snowpack-plugin-imagemin": "^1.0.0",
     "usedcss": "^1.0.7"
   },
   "volta": {
     "node": "10.24.1"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
