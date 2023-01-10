@@ -1,0 +1,11 @@
+/*
+ * generics: basic global styles
+ */
+
+html, body {
+  background: $page__bgColor;
+  color: $page__color;
+}
+body {
+  font-size: 100%;
+}

@@ -70,3 +70,9 @@ There are several single task you can use for development and production build:
 * you can use the .env to configure changes you need to make for different frontend clients, add more if necessary, all .env vars can be used in the Gulpfile via process.env
 * most tasks have a config structure in the Gulpfile, they are used for all frontend clients
 
+## Snowpack Build
+### How to run on localhost
+First install dependencies:
+```sh
+npm install
+```

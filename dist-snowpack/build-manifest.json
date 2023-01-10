@@ -1,0 +1,34 @@
+{
+  "inputs": {
+    "swt_default/css/styles.css": {
+      "bytes": 482,
+      "imports": []
+    },
+    "swt_mandant/css/styles.css": {
+      "bytes": 482,
+      "imports": []
+    }
+  },
+  "outputs": {
+    "../~~bundle~~/swt_default/css/styles.css": {
+      "imports": [],
+      "entryPoint": "swt_default/css/styles.css",
+      "inputs": {
+        "swt_default/css/styles.css": {
+          "bytesInOutput": 166
+        }
+      },
+      "bytes": 167
+    },
+    "../~~bundle~~/swt_mandant/css/styles.css": {
+      "imports": [],
+      "entryPoint": "swt_mandant/css/styles.css",
+      "inputs": {
+        "swt_mandant/css/styles.css": {
+          "bytesInOutput": 166
+        }
+      },
+      "bytes": 167
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "imports": {
+    "/index.html": {
+      "entry": [],
+      "css": [],
+      "js": []
+    },
+    "/swt_default/index.html": {
+      "entry": [
+        "/swt_default/js/behaviour.js"
+      ],
+      "css": [
+        "/swt_default/css/styles.css"
+      ],
+      "js": [
+        "/swt_default/js/behaviour.js"
+      ]
+    },
+    "/swt_mandant/index.html": {
+      "entry": [
+        "/swt_mandant/js/behaviour.js"
+      ],
+      "css": [
+        "/swt_mandant/css/styles.css"
+      ],
+      "js": [
+        "/swt_mandant/js/behaviour.js"
+      ]
+    }
+  },
+  "generated": {}
+}
